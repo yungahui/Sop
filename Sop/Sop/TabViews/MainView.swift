@@ -31,9 +31,9 @@ struct MainView: View {
                 .padding(.leading, 16.0)
                 .ignoresSafeArea()
 
-                ImageBlock(SopPhoto: pictureName1, album: Album1, SopTest: AlbumArray[0][0])
+                //ImageBlock(SopPhoto: pictureName1, album: Album1, SopTest: AlbumArray[0][0])
                     .padding(.bottom, 20.0)
-                //ImageBlock(SopPhoto: pictureName2, album: Album2)
+                ImageBlock(SopPhoto: pictureName2, album: Album2)
                     .padding(.bottom, 20.0)
 
             }
@@ -149,7 +149,7 @@ struct ImageBlock: View {
     var SopPhoto: String
     @State var album : [String : [String : String]]
     
-    var SopTest: Img
+    //var SopTest: Img
 
     var body: some View {
             VStack{
